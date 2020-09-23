@@ -8,9 +8,9 @@
 	text-decoration: none; 
 	font-family: 'Montserrat', sans-serif;
 }
-html , body{
+/*html , body{
 	height: 100%;
-}
+}*/
 .wrapper{
 	min-height: 100%
 }
@@ -193,14 +193,36 @@ html , body{
 }
 /*Footer*/
 .footer{
-	height:400px;
-	background:black;
+	height:200px;
+	background:#f7cac9;
 	position: relative;
-	
+	font-color:white;
 }
 .footerContaint{
-	border:1px solid red;
-	height:350px;
+	flex:1;
+	height:50px;
+	font-color:white;
+	font-size:10px;
+}
+.footer_section_about{
+	flex:1;
+	height: 100px;
+	padding:25px;
+	font-color:white;
+	font-size:10px;
+}
+.footer_section_links{
+	flex:1;
+	height: 100px;
+	padding:25px;
+	font-color:white;
+	font-size:10px;
+}
+.footer_section_contactForm{
+	height: 100px;
+	padding:25px;
+	font-color:white;
+	font-size:10px;
 }
 .footerButtom{
 	background:#323530;
@@ -212,4 +234,6 @@ html , body{
 	bottom: 0px;
 	left:0px;
 	padding-top:20px;
+	font-color:white;
+	font-size:10px;
 }
