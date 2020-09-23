@@ -2,7 +2,8 @@
 <html>
   <head>
 	  <title>SEPHORA</title>
-	  <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
   	  <div class="wrapper">
@@ -47,6 +48,13 @@
   	  	</div>
   	  	<div class="mainBody">
   	  		   <div class="just_arrived"><h3>Just Arrived</h3></div>
+
+            <div class="main-carousel" data-flickity>
+                <div class="cell"><img src="img1.png"></div>
+                <div class="cell"><img src="img2.png"></div>
+                <div class="cell"><img src="img3.png"></div>
+            </div>
+
              <div class="beauty_offers"><img src="Beauty Offers.png"></div>
   	  		   <div class="selling_fast"><h3>Selling Fast</h3></div>
   	  		   <div class="top_makeup_under"><h3>Top Makeup Under $25</h3></div>
@@ -62,5 +70,18 @@
   	  		  </div>
   	  	</div>
   	  </div>
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script>
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true
+        });
+      </script>
   </body>
 </html>
